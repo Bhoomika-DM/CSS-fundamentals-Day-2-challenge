@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fundamentals</title>
+    <style>
+        /* Styling Fonts */
+        body {
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            color: #333; /* Text color */
+            background-color: #f0f8ff; /* Background color */
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        /* Background Styles */
+        .header {
+            background-image: url('your-image.jpg'); /* Background image */
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        /* Heading Styling */
+        h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for effect */
+        }
+
+        /* Flexbox Layout */
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 200px); /* Adjusting height minus header */
+            padding: 20px;
+        }
+
+        /* Grid Layout */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+            gap: 20px; /* Space between grid items */
+            width: 80%;
+            max-width: 1000px;
+        }
+
+        /* Box Styling inside Grid */
+        .grid-item {
+            background-color: #fff;
+            border: 2px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            font-size: 1.2em;
+            transition: transform 0.3s ease;
+        }
+
+        /* Hover effect on grid items */
+        .grid-item:hover {
+            transform: translateY(-10px);
+            background-color: #fafafa;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with background image -->
+    <div class="header">
+        <h1>CSS Fundamentals Example</h1>
+    </div>
+
+    <!-- Flexbox layout for centering the grid container -->
+    <div class="main-content">
+        <!-- Grid layout for boxes -->
+        <div class="grid-container">
+            <div class="grid-item">Box 1: Fonts and Colors</div>
+            <div class="grid-item">Box 2: Background Styles</div>
+            <div class="grid-item">Box 3: Flexbox and Grid</div>
+        </div>
+    </div>
+
+</body>
+</html>
